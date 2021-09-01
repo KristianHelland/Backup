@@ -1,0 +1,51 @@
+/*alt som vises på nettsiden er inne i denne er alt som vises på nettsiden*/
+body{
+    background-color:#38023B;
+}
+/*Dette setter opp hvor ting skal ligge i forhold til hverandre*/
+.grid-container{
+    grid-template-columns:repeat(7, 1fr);
+    display: grid;
+}
+/*Overskrifter*/
+.header{
+    padding-top: 35px;
+    height: 70px;
+    background-color:#A288E3; 
+    grid-column: 1/8;
+    text-align:center;
+    margin-top: 5px;
+}
+/*Meny*/
+.menu{
+    grid-column: 7/8;
+}
+/*Vestland fylkeskomunes logo*/
+.VLFKlogo{
+    grid-column: 1/1;
+    text-align: left;
+    padding-left: 5px;
+}
+.header-text{
+    grid-column: 2/6;
+    color: #E2FFD6;
+    font-size: 30px;
+    text-align:center;
+}
+
+.ASVGlogo{
+    grid-column: 7/8;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.main-frame{
+    grid-column: 1/2;
+    background-color:#A288E3;
+    color: #E2FFD6;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {background-color: #E2FFD6;}
+}
